@@ -2,8 +2,8 @@
   <div>{{ a.map(v => ({ num: v })) }}</div>
   <div v-text="b"></div>
   <div v-html="c"></div>
-  <div v-if="d == 'd'">v-if 指令测试</div>
-  <div v-else-if="d == 'D'">v-else-if 指令测试</div>
+  <div v-if="d === 'd'">v-if 指令测试</div>
+  <div v-else-if="d === 'D'">v-else-if 指令测试</div>
   <div v-else>v-else 指令测试</div>
   <div v-show="e">v-show 指令测试</div>
   <div @click="parentFn"><button @[event].stop="OnClickFn">测试按钮</button></div>
@@ -31,7 +31,7 @@ const OnClickFn = () => {
 }
 const ids: string = "123"
 const style = {
-  backgroundcolor: 'red',
+  backgroundColor: 'red',
   fontsize: '16px'
 }
 const f = ref('v-model 指令测试')
